@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>License Plate Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Indian Vehicle License Plate Detection</h1>
+  </header>
+  <main>
+    <label for="fileInput" class="upload-label">Upload Image</label>
+    <input type="file" id="fileInput" accept="image/*" />
+    <img id="imagePreview" style="display:none;" />
+    <button id="detectBtn" disabled>Detect License Plate</button>
+    <div id="loading">Processing...</div>
+    <div id="result"></div>
+    <div id="validity"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
