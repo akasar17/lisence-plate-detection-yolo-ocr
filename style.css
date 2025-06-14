@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(135deg, #ff9933, #138808);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  background: white;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+.upload-label {
+  display: inline-block;
+  background: #ff9933;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#imagePreview {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+#detectBtn {
+  background: #138808;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#detectBtn:hover {
+  background: #0a5f0a;
+}
+
+#loading {
+  display: none;
+  margin-top: 10px;
+  color: #555;
+}
+
+#result, #validity {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
